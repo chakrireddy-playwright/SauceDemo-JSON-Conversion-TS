@@ -1,0 +1,233 @@
+{
+  "project_uid": "49371ca2-4670-4bd0-bd66-191cd9ef4d4b",
+  "created_by": "51765aba-5adc-4601-bad0-bf0f26ff656a",
+  "test_set_name": "S1",
+  "open_dashboard": true,
+  "run_id": "tMxPErEG",
+  "video_enabled": false,
+  "exec_mode": {
+    "mode": "medium",
+    "delay_ms": 1000
+  },
+  "scripts": [
+    {
+      "test_script_uid": "2b8e3233-7f83-429c-925d-8a25ab6be2ff",
+      "ts_id": "TS0003",
+      "test_case_name": "S1",
+      "voice_enabled": false,
+      "app_id": "ad91c9e5-adc4-4e95-a9f5-419f2a1d1e48",
+      "browser": "chrome",
+      "headless": false,
+      "screenshot_mode": "on_failure",
+      "stop_on_failure": true,
+      "steps": [
+        {
+          "step_name": "Open chrome",
+          "step_script": "tSetup.openBrowser('chrome')",
+          "label": ""
+        },
+        {
+          "label": "",
+          "step_name": "Navigate to URL",
+          "step_script": "tSetup.navigateToURL('https://www.saucedemo.com/')",
+          "step_uid": "e280ff35-2132-4eb3-9986-1536f41c17c1"
+        },
+        {
+          "label": "username",
+          "locators": [
+            "//input[@data-test='username']",
+            "//input[@id='user-name']",
+            "//input[@data-test='username' and @id='user-name']",
+            "//input[@data-test='username' and @id='user-name' and @name='user-name']",
+            "//input[@data-test='username' and @id='user-name' and @placeholder='Username']"
+          ],
+          "obj_uid": "dd38ce13-f12a-4a48-9d0d-65351fb1d839",
+          "page_uid": null,
+          "status": "active",
+          "step_name": "Enter 'standard_user' into 'username'",
+          "step_script": "tSetup.enterText('xpath','//input[@data-test=\"username\"]','standard_user')",
+          "step_uid": "5040b365-ef6c-489e-9ee6-7086c5e54ab5",
+          "value": "standard_user"
+        },
+        {
+          "label": "password",
+          "locators": [
+            "//input[@data-test='password']",
+            "//input[@id='password']",
+            "//input[@data-test='password' and @id='password']",
+            "//input[@data-test='password' and @id='password' and @name='password']",
+            "//input[@data-test='password' and @id='password' and @placeholder='Password']"
+          ],
+          "obj_uid": "a9791cb0-e715-4f97-94dd-f3eff944bb47",
+          "page_uid": null,
+          "status": "active",
+          "step_name": "Enter 'secret_sauce' into 'password'",
+          "step_script": "tSetup.enterText('xpath','//input[@data-test=\"password\"]','secret_sauce')",
+          "step_uid": "922d4086-1c41-4414-a66d-1c5052b89711",
+          "value": "secret_sauce"
+        },
+        {
+          "label": "login-button",
+          "locators": [
+            "//input[@data-test='login-button']",
+            "//input[@id='login-button']",
+            "//input[@data-test='login-button' and @id='login-button']",
+            "//input[@data-test='login-button' and @id='login-button' and @name='login-button']",
+            "//input[@data-test='login-button' and @id='login-button' and @type='submit']"
+          ],
+          "obj_uid": "bf1e4346-cef5-4131-8c48-d82c2d906490",
+          "page_uid": null,
+          "status": "active",
+          "step_name": "Click 'login-button'",
+          "step_script": "tSetup.clickElement('xpath','//input[@data-test=\"login-button\"]')",
+          "step_uid": "522ca9cf-c4e0-431a-915e-3a5e12bcf3db",
+          "value": ""
+        },
+        {
+          "label": "Add to cart",
+          "locators": [
+            "//button[@data-test='add-to-cart-sauce-labs-backpack']",
+            "//button[@id='add-to-cart-sauce-labs-backpack']",
+            "//button[@data-test='add-to-cart-sauce-labs-backpack' and @id='add-to-cart-sauce-labs-backpack']",
+            "//button[@data-test='add-to-cart-sauce-labs-backpack' and @id='add-to-cart-sauce-labs-backpack' and @name='add-to-cart-sauce-labs-backpack']",
+            "//button[@data-test='add-to-cart-sauce-labs-backpack' and normalize-space()='Add to cart']"
+          ],
+          "obj_uid": "a4ed3c63-0116-4c9c-9c60-73b8c27f55a6",
+          "page_uid": null,
+          "status": "active",
+          "step_name": "Click 'Add to cart'",
+          "step_script": "tSetup.clickElement('xpath','//button[@data-test=\"add-to-cart-sauce-labs-backpack\"]')",
+          "step_uid": "ccaa79b2-ea41-40ae-8468-8abfdc96c33a",
+          "value": ""
+        },
+        {
+          "label": "shopping-cart-badge",
+          "locators": [
+            "//span[@data-test='shopping-cart-badge']",
+            "//span[@data-test='shopping-cart-badge' and normalize-space()='1']",
+            "//span[@data-test='shopping-cart-badge' and text()='1']",
+            "//span[@data-test='shopping-cart-badge' and contains(text(), '1')]",
+            "//span[contains(@class, 'shopping_cart_badge') and normalize-space()='1']"
+          ],
+          "obj_uid": "5924f5e6-24cc-4198-bdf9-11f632a24124",
+          "page_uid": null,
+          "status": "active",
+          "step_name": "Click 'shopping-cart-badge'",
+          "step_script": "tSetup.clickElement('xpath','//span[@data-test=\"shopping-cart-badge\"]')",
+          "step_uid": "13a4642a-a064-4161-ac1b-4fcde62a4957",
+          "value": ""
+        },
+        {
+          "label": "Checkout",
+          "locators": [
+            "//button[@data-test='checkout']",
+            "//button[@id='checkout']",
+            "//button[@data-test='checkout' and @id='checkout']",
+            "//button[@data-test='checkout' and @id='checkout' and @name='checkout']",
+            "//button[@data-test='checkout' and normalize-space()='Checkout']"
+          ],
+          "obj_uid": "4e7adaa7-7d13-43ad-8236-9bb06a19f80f",
+          "page_uid": null,
+          "status": "active",
+          "step_name": "Click 'Checkout'",
+          "step_script": "tSetup.clickElement('xpath','//button[@data-test=\"checkout\"]')",
+          "step_uid": "485330a4-d2ca-487a-99e8-6eaf764dbacd",
+          "value": ""
+        },
+        {
+          "label": "firstName",
+          "locators": [
+            "//input[@data-test='firstName']",
+            "//input[@id='first-name']",
+            "//input[@data-test='firstName' and @id='first-name']",
+            "//input[@data-test='firstName' and @id='first-name' and @name='firstName']",
+            "//input[@data-test='firstName' and @id='first-name' and @placeholder='First Name']"
+          ],
+          "obj_uid": "4fdd9459-7cc8-4d83-9769-c989335dc529",
+          "page_uid": null,
+          "status": "active",
+          "step_name": "Enter 'Nagesh' into 'firstName'",
+          "step_script": "tSetup.enterText('xpath','//input[@data-test=\"firstName\"]','Nagesh')",
+          "step_uid": "0d52a97a-361f-4859-b352-fd6373f39da2",
+          "value": "Nagesh"
+        },
+        {
+          "label": "Last Name",
+          "locators": [
+            "//input[@data-test='lastName']",
+            "//input[@id='last-name']",
+            "//input[@data-test='lastName' and @id='last-name']",
+            "//input[@data-test='lastName' and @id='last-name' and @name='lastName']",
+            "//input[@data-test='lastName' and @id='last-name' and @placeholder='Last Name']"
+          ],
+          "obj_uid": "952303f8-0cf0-4a39-975c-966443b6c8dc",
+          "page_uid": null,
+          "status": "active",
+          "step_name": "Enter 'pva' into 'Last Name'",
+          "step_script": "tSetup.enterText('xpath','//input[@data-test=\"lastName\"]','pva')",
+          "step_uid": "8695345d-98c5-4ca0-92e3-840a81a2b879",
+          "value": "pva"
+        },
+        {
+          "label": "postalCode",
+          "locators": [
+            "//input[@data-test='postalCode']",
+            "//input[@id='postal-code']",
+            "//input[@data-test='postalCode' and @id='postal-code']",
+            "//input[@data-test='postalCode' and @id='postal-code' and @name='postalCode']",
+            "//input[@data-test='postalCode' and @id='postal-code' and @placeholder='Zip/Postal Code']"
+          ],
+          "obj_uid": "f55b3c99-f450-47eb-8a8f-4adbe6581dbe",
+          "page_uid": null,
+          "status": "active",
+          "step_name": "Enter '550050' into 'postalCode'",
+          "step_script": "tSetup.enterText('xpath','//input[@data-test=\"postalCode\"]','550050')",
+          "step_uid": "73322303-ebdf-4832-9221-34f540265a26",
+          "value": "550050"
+        },
+        {
+          "label": "continue",
+          "locators": [
+            "//input[@data-test='continue']",
+            "//input[@id='continue']",
+            "//input[@data-test='continue' and @id='continue']",
+            "//input[@data-test='continue' and @id='continue' and @name='continue']",
+            "//input[@data-test='continue' and @id='continue' and @type='submit']"
+          ],
+          "obj_uid": "aba0501e-e9d3-4f36-a04c-7417b5c4d419",
+          "page_uid": null,
+          "status": "active",
+          "step_name": "Click 'continue'",
+          "step_script": "tSetup.clickElement('xpath','//input[@data-test=\"continue\"]')",
+          "step_uid": "ab388ee8-4490-425e-acea-ec51a0085a42",
+          "value": ""
+        },
+        {
+          "label": "Finish",
+          "locators": [
+            "//button[@data-test='finish']",
+            "//button[@id='finish']",
+            "//button[@data-test='finish' and @id='finish']",
+            "//button[@data-test='finish' and @id='finish' and @name='finish']",
+            "//button[@data-test='finish' and normalize-space()='Finish']"
+          ],
+          "obj_uid": "a756f058-dbb6-4cd5-a690-c4146e5a65b0",
+          "page_uid": null,
+          "status": "active",
+          "step_name": "Click 'Finish'",
+          "step_script": "tSetup.clickElement('xpath','//button[@data-test=\"finish\"]')",
+          "step_uid": "398b6ab0-4dd7-4cd1-a194-8ac034c33281",
+          "value": ""
+        },
+        {
+          "step_name": "Close Browser",
+          "step_script": "tSetup.closeBrowser()",
+          "label": ""
+        }
+      ]
+    }
+  ],
+  "stop_on_failure": true,
+  "parallel": false,
+  "max_parallel": 3
+}
